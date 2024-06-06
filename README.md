@@ -101,7 +101,7 @@ This script extract the most important n sentences from each segment, so as to g
 This script is the same as summarize.py, but instead of returning the top sentences per segment it averages them and compare to a query input by the user (a prompt asks for it when the script is called), so as to return the segment that is the most similar to the query. In this case then the -nt parameter specifies how many sentences are averaged to represent each segment, whereas a very large number will result in all the sentences be averaged and, usually, better performance (but slightly longer runtime).
 
 ```
-python segment.py -data folder1 -wd 10 -th 1.5 -nt 1 --encoder=bert-base-uncased
+python semantic_search.py -data folder1 -wd 10 -th 1.5 -nt 1 --encoder=bert-base-uncased
 ```
 
 ### fit.py
